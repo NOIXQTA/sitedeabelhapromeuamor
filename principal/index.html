@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia das Abelhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone2.jpg" type="image/jpeg">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="site-header__brand" href="index.html">
+                <img src="imagens/icone2.jpg" alt="Icone do Guia das Abelhas">
+                <div>
+                    <strong>Guia das Abelhas</strong>
+                    <span>atlas visual brasileiro</span>
+                </div>
+            </a>
+            <nav class="site-header__nav">
+                <a href="#galeria">Galeria</a>
+                <a href="#especies">Especies</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <header class="hero">
+            <div class="hero__media">
+                <img id="heroRotatingImage" src="../especies/imagens/abelha-do-mel/Apis%20mellifera%20-%20Wikipedia%2C%20la%20enciclopedia%20libre.jpg" alt="Abelha-do-mel">
+                <div class="hero__media-badge">
+                    <p class="hero__media-label" id="heroRotatingLabel">Abelha-do-mel</p>
+                    <strong id="heroRotatingScientific">Apis mellifera</strong>
+                </div>
+            </div>
+            <div class="hero__panel">
+                <div class="hero__panel-copy">
+                    <p class="eyebrow">Atlas visual</p>
+                    <h1>Abelhas, polinizacao e um visual que ocupa a tela inteira</h1>
+                    <p class="hero__text">
+                        Um guia mais dinamico para explorar especies, imagens, curiosidades e a
+                        importancia das abelhas para a natureza e para a agricultura.
+                    </p>
+                </div>
+                <div class="hero__mini-gallery">
+                    <img src="imagens/apilcutor.jpg" alt="Apicultor trabalhando com abelhas">
+                    <img src="imagens/abelhadescricao.jpg" alt="Detalhe ilustrativo de abelha">
+                </div>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#especies">Explorar especies</a>
+                    <a class="button button--ghost" href="#galeria">Ver galeria</a>
+                </div>
+                <div class="hero__facts">
+                    <div class="fact-card">
+                        <strong>27 especies</strong>
+                        <span>paginas organizadas</span>
+                    </div>
+                    <div class="fact-card">
+                        <strong>Galeria viva</strong>
+                        <span>mais imagens e destaque visual</span>
+                    </div>
+                    <div class="fact-card">
+                        <strong>Versao estatica</strong>
+                        <span>pronta para GitHub Pages</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner-strip">
+            <div class="banner-strip__track">
+                <span>Polinizacao</span>
+                <span>Meliponicultura</span>
+                <span>Biodiversidade</span>
+                <span>Abelhas nativas</span>
+                <span>Conservacao</span>
+                <span>Polinizacao</span>
+                <span>Meliponicultura</span>
+                <span>Biodiversidade</span>
+                <span>Abelhas nativas</span>
+                <span>Conservacao</span>
+            </div>
+        </section>
+
+        <main class="content">
+            <section class="overview">
+                <article class="overview__intro glass-card">
+                    <div class="overview__intro-copy">
+                        <p class="section-label">Sobre o projeto</p>
+                        <h2>Mais tela, mais imagem e mais ritmo visual</h2>
+                        <p>
+                            Este projeto foi criado para aproximar as pessoas do universo das
+                            abelhas de um jeito mais bonito, simples e interessante. Aqui voce
+                            encontra especies conhecidas, curiosidades e imagens que ajudam a
+                            entender melhor o papel desses insetos na natureza.
+                        </p>
+                        <p>
+                            Mais do que um catalogo visual, este site funciona como um convite
+                            para observar, aprender e valorizar as abelhas brasileiras, mostrando
+                            como cada especie tem seu proprio encanto e sua importancia para os
+                            ecossistemas.
+                        </p>
+                    </div>
+                    <div class="overview__intro-media">
+                        <img src="imagens/favo.jpg" alt="Favo de mel em destaque">
+                    </div>
+                </article>
+
+                <div class="overview__gallery" id="galeria">
+                    <article class="gallery-card gallery-card--large">
+                        <img src="imagens/Verde.jpg" alt="Abelha em flor">
+                        <div class="gallery-card__content">
+                            <p class="section-label">Destaque</p>
+                            <h3>Imagens com mais presenca</h3>
+                            <p>As fotos agora ajudam a contar a historia do site logo na primeira tela.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <img src="imagens/honey bee.jpg" alt="Colmeia">
+                    </article>
+                    <article class="gallery-card">
+                        <img src="imagens/polen.jpg" alt="Abelha coletando polen">
+                    </article>
+                    <article class="gallery-card">
+                        <img src="imagens/flor.jpg" alt="Abelha em flor amarela">
+                    </article>
+                </div>
+            </section>
+
+            <section class="species-section" id="especies">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Colecao</p>
+                        <h2>Especies em destaque</h2>
+                    </div>
+                    <p>Os cards agora saem de uma estrutura estatica pronta para publicacao no GitHub Pages.</p>
+                </div>
+
+                <div class="species-tools">
+                    <label class="species-tools__search">
+                        <span>Buscar especie</span>
+                        <input id="speciesSearch" type="search" placeholder="Digite um nome comum ou cientifico">
+                    </label>
+                    <div class="species-tools__filters">
+                        <button class="species-filter is-active" type="button" data-filter="todas">Todas</button>
+                        <button class="species-filter" type="button" data-filter="Abelha social manejada">Abelha social manejada</button>
+                        <button class="species-filter" type="button" data-filter="Abelha nativa de brilho metalico">Abelha nativa de brilho metalico</button>
+                        <button class="species-filter" type="button" data-filter="Mamangava nativa">Mamangava nativa</button>
+                        <button class="species-filter" type="button" data-filter="Abelha solitaria coletora de oleos">Abelha solitaria coletora de oleos</button>
+                        <button class="species-filter" type="button" data-filter="Abelha sem ferrao">Abelha sem ferrao</button>
+                        <button class="species-filter" type="button" data-filter="Abelha carpinteira">Abelha carpinteira</button>
+                        <button class="species-filter" type="button" data-filter="Abelha das orquideas">Abelha das orquideas</button>
+                        <button class="species-filter" type="button" data-filter="Abelha nativa de pequeno porte">Abelha nativa de pequeno porte</button>
+                        <button class="species-filter" type="button" data-filter="Abelha solitaria nativa">Abelha solitaria nativa</button>
+                        <button class="species-filter" type="button" data-filter="Abelha sem ferrao defensiva">Abelha sem ferrao defensiva</button>
+                    </div>
+                </div>
+
+                <div class="species-grid">
+                    <article class="species-card species-card--featured" data-category="Abelha social manejada" data-search="abelha-do-mel apis mellifera">
+                        <a class="species-card__media" href="../especies/abelha-do-mel.html">
+                            <img src="../especies/imagens/abelha-do-mel/Apis%20mellifera%20-%20Wikipedia%2C%20la%20enciclopedia%20libre.jpg" alt="Abelha-do-mel">
+                        </a>
+                        <span>Abelha-do-mel</span>
+                        <small>Apis mellifera</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/abelha-do-mel.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Apis_mellifera" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha nativa de brilho metalico" data-search="abelha-verde-metalica augochloropsis">
+                        <a class="species-card__media" href="../especies/abelha-verde-metalica.html">
+                            <img src="../especies/imagens/abelha-verde-metalica/Metallic%20Green%20Bee%20%233.jpg" alt="Abelha-verde-metalica">
+                        </a>
+                        <span>Abelha-verde-metalica</span>
+                        <small>Augochloropsis</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/abelha-verde-metalica.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Augochloropsis" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Mamangava nativa" data-search="mamangava-preta bombus morio">
+                        <a class="species-card__media" href="../especies/mamangava-preta.html">
+                            <img src="../especies/imagens/mamangava-preta/Mamangava-preta.jpg" alt="Mamangava-preta">
+                        </a>
+                        <span>Mamangava-preta</span>
+                        <small>Bombus morio</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/mamangava-preta.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://en.wikipedia.org/wiki/Bombus_morio" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha solitaria coletora de oleos" data-search="abelha-da-acerola centris analis">
+                        <a class="species-card__media" href="../especies/abelha-da-acerola.html">
+                            <img src="../especies/imagens/abelha-da-acerola/centris%20analis.jpg" alt="Abelha-da-acerola">
+                        </a>
+                        <span>Abelha-da-acerola</span>
+                        <small>Centris analis</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/abelha-da-acerola.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Centris_analis" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="moca-branca frieseomelitta doederleini">
+                        <a class="species-card__media" href="../especies/moca-branca.html">
+                            <img src="../especies/imagens/moca-branca/Apis%20mellifera%20ligustica%20%20%28abelha%20italiana%29.jpg" alt="Moca-branca">
+                        </a>
+                        <span>Moca-branca</span>
+                        <small>Frieseomelitta doederleini</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/moca-branca.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Frieseomelitta%20doederleini" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="manduri-do-mato-grosso melipona orbignyi">
+                        <a class="species-card__media" href="../especies/manduri-do-mato-grosso.html">
+                            <img src="../especies/imagens/manduri-do-mato-grosso/transferir%20%281%29.jpg" alt="Manduri-do-Mato-Grosso">
+                        </a>
+                        <span>Manduri-do-Mato-Grosso</span>
+                        <small>Melipona orbignyi</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/manduri-do-mato-grosso.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Melipona%20orbignyi" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card species-card--featured" data-category="Abelha sem ferrao" data-search="mandacaia melipona quadrifasciata">
+                        <a class="species-card__media" href="../especies/mandacaia.html">
+                            <img src="../especies/imagens/mandacaia/Melipona_quadrifasciata.jpeg" alt="Mandacaia">
+                        </a>
+                        <span>Mandacaia</span>
+                        <small>Melipona quadrifasciata</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/mandacaia.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://en.wikipedia.org/wiki/Melipona_quadrifasciata" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="urucu-amarela melipona rufiventris">
+                        <a class="species-card__media" href="../especies/urucu-amarela.html">
+                            <img src="../especies/imagens/urucu-amarela/Abelhas%20sem%20ferr%C3%A3o_%20Uru%C3%A7u-Amarela%20%28Melipona%20rufiventris%29.jpg" alt="Urucu-amarela">
+                        </a>
+                        <span>Urucu-amarela</span>
+                        <small>Melipona rufiventris</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/urucu-amarela.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Melipona%20rufiventris" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="urucu-nordestina melipona scutellaris">
+                        <a class="species-card__media" href="../especies/urucu-nordestina.html">
+                            <img src="../especies/imagens/urucu-nordestina/Abelhas%20sem%20ferr%C3%A3o_%20Uru%C3%A7u%20%28Melipona%20scutellaris%29.jpg" alt="Urucu-nordestina">
+                        </a>
+                        <span>Urucu-nordestina</span>
+                        <small>Melipona scutellaris</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/urucu-nordestina.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Melipona%20scutellaris" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="boca-de-sapo partamona helleri">
+                        <a class="species-card__media" href="../especies/boca-de-sapo.html">
+                            <img src="../especies/imagens/boca-de-sapo/Partamona%20helleri.jpg" alt="Boca-de-sapo">
+                        </a>
+                        <span>Boca-de-sapo</span>
+                        <small>Partamona helleri</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/boca-de-sapo.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Partamona%20helleri" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="abelha-mirim plebeia droryana">
+                        <a class="species-card__media" href="../especies/abelha-mirim.html">
+                            <img src="../especies/imagens/abelha-mirim/Plebeia%20droryana.webp" alt="Abelha-mirim">
+                        </a>
+                        <span>Abelha-mirim</span>
+                        <small>Plebeia droryana</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/abelha-mirim.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Plebeia%20droryana" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="mandaguari scaptotrigona postica">
+                        <a class="species-card__media" href="../especies/mandaguari.html">
+                            <img src="../especies/imagens/mandaguari/Caupolicana%20fulvicollis%2C%20Female%2C%20bees%20of%20Chile.jpg" alt="Mandaguari">
+                        </a>
+                        <span>Mandaguari</span>
+                        <small>Scaptotrigona postica</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/mandaguari.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Scaptotrigona%20postica" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="jatai tetragonisca angustula">
+                        <a class="species-card__media" href="../especies/jatai.html">
+                            <img src="../especies/imagens/jatai/Tetragonisca%20angustula%2C%20Costa%20Rica.jpg" alt="Jatai">
+                        </a>
+                        <span>Jatai</span>
+                        <small>Tetragonisca angustula</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/jatai.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Tetragonisca%20angustula" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="jatai-do-sul tetragonisca fiebrigi">
+                        <a class="species-card__media" href="../especies/jatai-do-sul.html">
+                            <img src="../especies/imagens/jatai-do-sul/Tetragonisca%20angustula%20en%20flor%20de%20Tithonia%20diversifolia.jpg" alt="Jatai-do-sul">
+                        </a>
+                        <span>Jatai-do-sul</span>
+                        <small>Tetragonisca fiebrigi</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/jatai-do-sul.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Tetragonisca%20fiebrigi" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="irapua trigona spinipes">
+                        <a class="species-card__media" href="../especies/irapua.html">
+                            <img src="../especies/imagens/irapua/Abelhas%20sem%20ferr%C3%A3o_%20Irapu%C3%A3%20%28Trigona%20spinipes%29.jpg" alt="Irapua">
+                        </a>
+                        <span>Irapua</span>
+                        <small>Trigona spinipes</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/irapua.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Trigona%20spinipes" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha carpinteira" data-search="abelha-carpinteira-violeta xylocopa augusti">
+                        <a class="species-card__media" href="../especies/abelha-carpinteira-violeta.html">
+                            <img src="../especies/imagens/abelha-carpinteira-violeta/Xylocopa%20augusti.jpg" alt="Abelha-carpinteira-violeta">
+                        </a>
+                        <span>Abelha-carpinteira-violeta</span>
+                        <small>Xylocopa augusti</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/abelha-carpinteira-violeta.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Xylocopa%20augusti" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card species-card--featured" data-category="Abelha carpinteira" data-search="abelha-carpinteira-do-ceara xylocopa cearensis">
+                        <a class="species-card__media" href="../especies/abelha-carpinteira-do-ceara.html">
+                            <img src="../especies/imagens/abelha-carpinteira-do-ceara/xylocopa%20violacea.jpg" alt="Abelha-carpinteira-do-Ceara">
+                        </a>
+                        <span>Abelha-carpinteira-do-Ceara</span>
+                        <small>Xylocopa cearensis</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/abelha-carpinteira-do-ceara.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Xylocopa%20cearensis" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha solitaria coletora de oleos" data-search="abelha-de-oleo klugii centris klugii">
+                        <a class="species-card__media" href="../especies/centris-klugii.html">
+                            <img src="../especies/imagens/centris-klugii/Centris%20klugii.jpg" alt="Abelha-de-oleo klugii">
+                        </a>
+                        <span>Abelha-de-oleo klugii</span>
+                        <small>Centris klugii</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/centris-klugii.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Centris%20klugii" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card species-card--featured" data-category="Abelha das orquideas" data-search="abelha-das-orquideas euglossa cordata">
+                        <a class="species-card__media" href="../especies/euglossa-cordata.html">
+                            <img src="../especies/imagens/euglossa-cordata/Euglossa%20cordata.jpg" alt="Abelha-das-orquideas">
+                        </a>
+                        <span>Abelha-das-orquideas</span>
+                        <small>Euglossa cordata</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/euglossa-cordata.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Euglossa%20cordata" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha nativa de pequeno porte" data-search="abelha-nativa vernoniae exomalopsis vernoniae">
+                        <a class="species-card__media" href="../especies/exomalopsis-vernoniae.html">
+                            <img src="../especies/imagens/exomalopsis-vernoniae/Exomalopsis%20vernoniae.jpg" alt="Abelha-nativa vernoniae">
+                        </a>
+                        <span>Abelha-nativa vernoniae</span>
+                        <small>Exomalopsis vernoniae</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/exomalopsis-vernoniae.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Exomalopsis%20vernoniae" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="guaraipo melipona bicolor">
+                        <a class="species-card__media" href="../especies/melipona-bicolor.html">
+                            <img src="../especies/imagens/melipona-bicolor/Melipona%20bicolor.webp" alt="Guaraipo">
+                        </a>
+                        <span>Guaraipo</span>
+                        <small>Melipona bicolor</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/melipona-bicolor.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Uru%C3%A7u-p%C3%A9-de-pau" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="uruçu-amarela melipona rufiventris">
+                        <a class="species-card__media" href="../especies/melipona-rufiventris.html">
+                            <img src="../especies/imagens/melipona-rufiventris/Melipona%20rufiventris.jpg" alt="Uruçu-amarela">
+                        </a>
+                        <span>Uruçu-amarela</span>
+                        <small>Melipona rufiventris</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/melipona-rufiventris.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Melipona%20rufiventris" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha sem ferrao" data-search="mirim-nigriceps plebeia nigriceps">
+                        <a class="species-card__media" href="../especies/plebeia-nigriceps.html">
+                            <img src="../especies/imagens/plebeia-nigriceps/Plebeia%20nigriceps.webp" alt="Mirim-nigriceps">
+                        </a>
+                        <span>Mirim-nigriceps</span>
+                        <small>Plebeia nigriceps</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/plebeia-nigriceps.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Plebeia_nigriceps" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha solitaria nativa" data-search="abelha-de-oleo fructifera ptilothrix fructifera">
+                        <a class="species-card__media" href="../especies/ptilothrix-fructifera.html">
+                            <img src="../especies/imagens/ptilothrix-fructifera/Ptilothrix%20fructifera.jpg" alt="Abelha-de-oleo fructifera">
+                        </a>
+                        <span>Abelha-de-oleo fructifera</span>
+                        <small>Ptilothrix fructifera</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/ptilothrix-fructifera.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Ptilothrix%20fructifera" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha solitaria coletora de oleos" data-search="abelha-de-oleo centris aenea">
+                        <a class="species-card__media" href="../especies/centris-aenea.html">
+                            <img src="../especies/imagens/centris-aenea/Centris%20aenea.jpg" alt="Abelha-de-oleo">
+                        </a>
+                        <span>Abelha-de-oleo</span>
+                        <small>Centris aenea</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/centris-aenea.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Centris%20aenea" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card species-card--featured" data-category="Abelha sem ferrao defensiva" data-search="tataira oxytrigona tataira">
+                        <a class="species-card__media" href="../especies/oxytrigona-tataira.html">
+                            <img src="../especies/imagens/oxytrigona-tataira/Oxytrigona%20tataira.jpg" alt="Tataira">
+                        </a>
+                        <span>Tataira</span>
+                        <small>Oxytrigona tataira</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/oxytrigona-tataira.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Tata%C3%ADra" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                    <article class="species-card" data-category="Abelha solitaria nativa" data-search="abelha-solitaria serripes parapsaenythia serripes">
+                        <a class="species-card__media" href="../especies/parapsaenythia-serripes.html">
+                            <img src="../especies/imagens/parapsaenythia-serripes/Parapsaenythia%20serripes.jpg" alt="Abelha-solitaria serripes">
+                        </a>
+                        <span>Abelha-solitaria serripes</span>
+                        <small>Parapsaenythia serripes</small>
+                        <div class="species-card__actions">
+                            <a class="species-card__button species-card__button--site" href="../especies/parapsaenythia-serripes.html">Abrir pagina</a>
+                            <a class="species-card__button species-card__button--wiki" href="https://pt.wikipedia.org/wiki/Especial:Pesquisar?search=Parapsaenythia%20serripes" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="feature-band">
+                <div class="feature-band__text">
+                    <p class="section-label">Experiencia</p>
+                    <h2>Um visual mais vivo para combinar com o tema</h2>
+                    <p>
+                        Entre cards maiores, imagens panoramicas e uso mais intenso das laterais,
+                        o site ficou com mais presenca sem perder a leitura em celular.
+                    </p>
+                    <p>
+                        A experiencia foi pensada para ser mais envolvente desde a primeira tela,
+                        com imagens em destaque, nomes mais familiares e uma navegacao que convida
+                        o visitante a explorar cada abelha com mais curiosidade.
+                    </p>
+                </div>
+                <div class="feature-band__images">
+                    <img src="imagens/Verde.jpg" alt="Ilustracao de abelha">
+                    <img src="imagens/Fundodosite.jpg" alt="Fundo ilustrativo">
+                </div>
+            </section>
+
+            <section class="contact-section" id="contato">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Contato</p>
+                        <h2>Envie uma mensagem</h2>
+                    </div>
+                    <p>Versao estatica pronta para abrir seu aplicativo de email.</p>
+                </div>
+
+                <div id="contactStatus" class="form-status form-status--sucesso" hidden></div>
+
+                <div class="contact-layout">
+                    <form class="contact-form" id="contactForm">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                        <button type="submit" class="button button--primary button--full">Abrir email</button>
+                    </form>
+
+                    <aside class="contact-aside">
+                        <img src="imagens/transferir (4).jpg" alt="Abelha em detalhe">
+                        <div class="contact-aside__copy">
+                            <p class="section-label">Conversa aberta</p>
+                            <h3>Fale sobre abelhas, meliponicultura e preservacao</h3>
+                            <p>Na versao estatica, o formulario monta uma mensagem e abre seu aplicativo de email para envio.</p>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Guia das Abelhas - Projeto visual Criado por SaymonDev em 2026 Para Giovanna Minha namorada</p>
+        </footer>
+    </div>
+    <script>
+        window.heroSlides = [{"src":"../especies/imagens/abelha-do-mel/Apis%20mellifera%20-%20Wikipedia%2C%20la%20enciclopedia%20libre.jpg","alt":"Abelha-do-mel","label":"Abelha-do-mel","scientific":"Apis mellifera"},{"src":"../especies/imagens/abelha-verde-metalica/Metallic%20Green%20Bee%20%233.jpg","alt":"Abelha-verde-metalica","label":"Abelha-verde-metalica","scientific":"Augochloropsis"},{"src":"../especies/imagens/mamangava-preta/Mamangava-preta.jpg","alt":"Mamangava-preta","label":"Mamangava-preta","scientific":"Bombus morio"},{"src":"../especies/imagens/abelha-da-acerola/centris%20analis.jpg","alt":"Abelha-da-acerola","label":"Abelha-da-acerola","scientific":"Centris analis"},{"src":"../especies/imagens/moca-branca/Apis%20mellifera%20ligustica%20%20%28abelha%20italiana%29.jpg","alt":"Moca-branca","label":"Moca-branca","scientific":"Frieseomelitta doederleini"},{"src":"../especies/imagens/manduri-do-mato-grosso/transferir%20%281%29.jpg","alt":"Manduri-do-Mato-Grosso","label":"Manduri-do-Mato-Grosso","scientific":"Melipona orbignyi"},{"src":"../especies/imagens/mandacaia/Melipona_quadrifasciata.jpeg","alt":"Mandacaia","label":"Mandacaia","scientific":"Melipona quadrifasciata"},{"src":"../especies/imagens/urucu-amarela/Abelhas%20sem%20ferr%C3%A3o_%20Uru%C3%A7u-Amarela%20%28Melipona%20rufiventris%29.jpg","alt":"Urucu-amarela","label":"Urucu-amarela","scientific":"Melipona rufiventris"}];
+        window.contactConfig = { email: 'vianaabelhas@gmail.com' };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
